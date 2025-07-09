@@ -1,0 +1,6 @@
+{
+    "require": {
+        "razorpay/razorpay": "^2.9",
+        "firebase/php-jwt": "^6.11"
+    }
+}
