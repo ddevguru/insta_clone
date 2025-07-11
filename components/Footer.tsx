@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
         <Separator className="my-6 bg-gray-200" />
         <div className="text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} Devloperwala. All rights reserved.
+          © {new Date().getFullYear()} Mysgram. All rights reserved.
         </div>
       </div>
     </footer>
