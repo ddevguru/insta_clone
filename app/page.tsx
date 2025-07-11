@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
 import Navbar from "@/components/navbar"
 import Stories from "@/components/stories"
+import Footer from "@/components/Footer"
 
 const BASE_PROFILE_URL = "https://devloperwala.in/uploads/profiles/"
 const BASE_REEL_URL = "https://devloperwala.in/uploads/reels/"
@@ -259,6 +260,7 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <Footer />
       </div>
     )
   }
@@ -509,7 +511,7 @@ export default function Home() {
                         <Input
                           placeholder="Add a comment..."
                           value={commentInputs[item.id] || ""}
-                          onChange={(e) => setCommentInputs((prev) => ({ ...prev, [item.id]: e.target.value }))}
+                          onChange={(e) => setCommentInputs((prev) => ({ ...prev, [id]: e.target.value }))}
                           className={`flex-1 text-sm border-0 bg-transparent focus:ring-0 rounded-lg ${
                             item.type === "reel"
                               ? "text-white placeholder-gray-400 focus:bg-white/10"
@@ -551,6 +553,7 @@ export default function Home() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   )
 }
